@@ -1,6 +1,6 @@
 package cts.teme.tema1;
 
-public class Angajat {
+public class Angajat implements Prima {
 	
 	private String nume;
 	private String prenume;
@@ -15,6 +15,15 @@ public class Angajat {
 		this.departament = departament;
 		this.salariu = salariu;
 		this.ok = ok;
+	}
+	
+@Override
+	public float getPrima() {
+		if(ok=true)
+			{
+			return salariu+1000;
+			}else 
+				return salariu;
 	}
 	
 	
